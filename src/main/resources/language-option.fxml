@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<StackPane prefHeight="376.0" prefWidth="664.0" stylesheets="@styles/language-option.css"
+           xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="org.example.Toolbar.Help.LanguageOption">
+    <VBox alignment="CENTER" prefHeight="547.0" prefWidth="769.0" spacing="20.0">
+        <Label fx:id="language_titleLabel" contentDisplay="RIGHT" prefHeight="49.0" prefWidth="611.0"
+               style="-fx-font-size: 16px; -fx-font-weight: bold;" text="%language_titleLabel"/>
+        <!-- Client Name Input Section -->
+        <VBox alignment="CENTER" prefHeight="175.0" prefWidth="664.0" spacing="10.0">
+            <Label fx:id="language_languageLabel" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0"
+                   prefWidth="400.0" text="%language_languageLabel"/>
+            <ChoiceBox fx:id="language_languageChoice" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0"
+                       prefWidth="400.0" styleClass="custom-choicebox"/>
+        </VBox>
+        <!-- Buttons Section -->
+        <HBox alignment="CENTER" prefHeight="68.0" prefWidth="664.0" spacing="10.0">
+            <Button fx:id="language_confirmButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0"
+                    styleClass="confirm-button" text="%language_confirmButton"/>
+            <Button fx:id="language_cancelButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0"
+                    styleClass="default-button" text="%language_cancelButton"/>
+        </HBox>
+    </VBox>
+</StackPane>

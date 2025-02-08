@@ -1,0 +1,116 @@
+/* Toolbar menu background */
+.toolbar-menu {
+    -fx-background-color: #D1D1D1;
+}
+
+/* Styling for the toolbar buttons */
+.toolbar-button {
+    -fx-background-color: #D1D1D1;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, transparent, 0, 0, 0, 0);
+    -fx-text-fill: #000000;
+    -fx-transition: all 0.3s ease;
+}
+
+.toolbar-button:hover {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+}
+
+.toolbar-button:pressed {
+    -fx-effect: dropshadow(gaussian, #BC5A01, 10, 0.0, 0, 2);
+    -fx-background-color: #F39C12;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Remove rounded borders for the TabPane */
+.tab-pane {
+    -fx-border-radius: 0; /* Removes border rounding */
+    -fx-background-radius: 0; /* Removes background rounding */
+}
+
+/* Remove rounded corners for the tabs */
+.tab {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/* Selected tab styling */
+.tab:selected {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/* Tab header area (if needed for consistency) */
+.tab-header-area {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/* Default Button Style */
+.default-button {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+.default-button:hover {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+/* Apply base styles for the ChoiceBox */
+.custom-choicebox {
+    -fx-background-color: #dcdcdc;
+    -fx-text-fill: #000000; /* Default text color */
+    -fx-background-radius: 5;
+}
+
+/* Highlighted value styling when focused */
+.custom-choicebox.cell:selected {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Highlighted value styling when hovered */
+.custom-choicebox.cell:hover {
+    -fx-background-color: #D67B32;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Remove focus border */
+.list-view {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Base style for ListView cells */
+.list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+}
+
+/* Hover effect for non-empty rows */
+.list-cell:filled:hover {
+    -fx-background-color: #D67B32;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Selected row style */
+.list-cell:selected {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+}
+
+.field-box {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.field-box:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}

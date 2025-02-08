@@ -1,0 +1,124 @@
+/* Apply base styles for the ChoiceBox */
+.custom-choicebox {
+    -fx-background-color: #dcdcdc;
+    -fx-text-fill: #000000; /* Default text color */
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/* Highlighted value styling when focused */
+.custom-choicebox.cell:selected {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Highlighted value styling when hovered */
+.custom-choicebox.cell:hover {
+    -fx-background-color: #D67B32;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+/* Toggle Button */
+.toggle-button {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 0;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4C4E4B; /* Background color for buttons */
+    -fx-text-fill: #FFFFFF; /* Text color for buttons */
+    -fx-background-radius: 0; /* No rounded corners */
+}
+
+.button:hover {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+/* Select Button */
+.orange-button {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+/* Styling Boxes & Labels */
+.grey-box {
+    -fx-background-color: #D1D1D1;
+}
+
+.dark-grey-box {
+    -fx-background-color: #4C4E4B;
+}
+
+.dark-grey-label {
+    -fx-text-fill: #4C4E4B;
+    -fx-font-weight: bold;
+}
+
+/* Specific styling for the assetFoundLabel */
+.item-found-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+/* Remove rounded corners from specific TextFields */
+.text-field {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/* Remove focus border */
+.table-view {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Base style for TableView rows */
+.table-row-cell {
+    -fx-background-color: #FFFFFF; /* Default background */
+    -fx-text-fill: #000000; /* Default text color */
+}
+
+/* Hover effect for non-empty rows */
+.table-row-cell:filled:hover {
+    -fx-background-color: #D67B32; /* Hover background color */
+    -fx-text-fill: #FFFFFF; /* Hover text color */
+}
+
+/* Selected row style */
+.table-row-cell:selected {
+    -fx-background-color: #BC5A01; /* Selected background color */
+    -fx-text-fill: #FFFFFF; /* Selected text color */
+}
+
+/* Base style for TableView cells */
+.table-cell {
+    -fx-background-color: transparent; /* Cells inherit row background */
+    -fx-text-fill: inherit; /* Cells inherit text color */
+}
+
+/* Hover effect for TableView cells (optional, usually rows suffice) */
+.table-cell:filled:hover {
+    -fx-background-color: transparent; /* Optional: Cell-level hover */
+    -fx-text-fill: inherit;
+}
+
+/* Selected cell style (align with row style) */
+.table-cell:selected {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+

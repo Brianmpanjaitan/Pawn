@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="800.0" prefWidth="840.0" stylesheets="@styles/add-item.css" xmlns="http://javafx.com/javafx/23"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Toolbar.Savings.AddSavings">
+    <VBox prefHeight="200.0" prefWidth="100.0">
+        <VBox fx:id="addSavings_VBoxContent" alignment="CENTER" prefHeight="736.0" prefWidth="840.0" spacing="20.0">
+            <Label fx:id="addSavings_titleLabel" contentDisplay="RIGHT" prefHeight="44.0" prefWidth="753.0"
+                   style="-fx-font-size: 16px; -fx-font-weight: bold;" text="%addSavings.title">
+                <VBox.margin>
+                    <Insets top="40.0"/>
+                </VBox.margin>
+            </Label>
+            <HBox prefHeight="363.0" prefWidth="665.0">
+                <VBox alignment="CENTER" prefHeight="75.0" prefWidth="664.0" spacing="10.0">
+                    <Label fx:id="addSavings_nameLabel" prefHeight="33.0" prefWidth="300.0"
+                           text="%addSavings.nameLabel"/>
+                    <TextField fx:id="addSavings_customerNameField" maxHeight="-Infinity" maxWidth="-Infinity"
+                               prefHeight="25.0" prefWidth="300.0" styleClass="field-box"/>
+                    <Label fx:id="addSavings_statusLabel" prefHeight="33.0" prefWidth="300.0"
+                           text="%addSavings.statusLabel"/>
+                    <ChoiceBox fx:id="addSavings_statusChoice" maxHeight="-Infinity" maxWidth="-Infinity"
+                               prefHeight="25.0" prefWidth="300.0" styleClass="custom-choicebox"/>
+                    <Label fx:id="addSavings_dateLabel" prefHeight="33.0" prefWidth="300.0"
+                           text="%addSavings.dateLabel"/>
+                    <DatePicker fx:id="addSavings_datePicker" maxHeight="-Infinity" maxWidth="-Infinity"
+                                prefHeight="25.0" prefWidth="300.0" styleClass="field-box"/>
+                    <Label fx:id="addSavings_othersLabel" prefHeight="33.0" prefWidth="300.0"
+                           text="%addSavings.othersLabel"/>
+                    <TextField fx:id="addSavings_otherField" maxHeight="-Infinity" maxWidth="-Infinity"
+                               prefHeight="25.0" prefWidth="300.0" styleClass="field-box"/>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="75.0" prefWidth="664.0" spacing="10.0">
+                    <Label fx:id="addSavings_principalLabel" prefHeight="33.0" prefWidth="300.0"
+                           text="%addSavings.principal"/>
+                    <TextField fx:id="addSavings_principalField" maxHeight="-Infinity" maxWidth="-Infinity"
+                               prefHeight="25.0" prefWidth="300.0" styleClass="field-box"/>
+                    <Label fx:id="addSavings_mandatoryLabel" prefHeight="33.0" prefWidth="300.0"
+                           text="%addSavings.mandatory"/>
+                    <TextField fx:id="addSavings_mandatoryField" maxHeight="-Infinity" maxWidth="-Infinity"
+                               prefHeight="25.0" prefWidth="300.0" styleClass="field-box"/>
+                    <Label fx:id="addItem_capitalLabel" prefHeight="33.0" prefWidth="300.0"
+                           text="%addSavings.capital"/>
+                    <TextField fx:id="addSavings_capitalField" maxHeight="-Infinity" maxWidth="-Infinity"
+                               prefHeight="25.0" prefWidth="300.0" styleClass="field-box"/>
+                    <Label fx:id="addSavings_voluntaryLabel" prefHeight="33.0" prefWidth="300.0"
+                           text="%addSavings.voluntary"/>
+                    <TextField fx:id="addSavings_voluntaryField" maxHeight="-Infinity" maxWidth="-Infinity"
+                               prefHeight="25.0" prefWidth="300.0" styleClass="field-box"/>
+                </VBox>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="83.0" prefWidth="838.0" spacing="10.0">
+                <children>
+                    <Label fx:id="addSavings_totalLabel" prefHeight="17.0" prefWidth="625.0"
+                           text="%addSavings.total"/>
+                    <TextField fx:id="addSavings_totalField" maxHeight="-Infinity" maxWidth="-Infinity"
+                               prefHeight="25.0" prefWidth="629.0" styleClass="field-box"/>
+                </children>
+            </VBox>
+            <HBox prefHeight="190.0" prefWidth="838.0">
+                <VBox alignment="CENTER" prefHeight="211.0" prefWidth="838.0" spacing="10.0">
+                    <Label fx:id="addSavings_notesLabel" prefHeight="26.0" prefWidth="627.0"
+                           text="%addSavings.notes"/>
+                    <TextArea fx:id="addSavings_notesField" maxHeight="-Infinity" maxWidth="-Infinity"
+                              prefHeight="183.0" prefWidth="629.0" styleClass="field-box"/>
+                </VBox>
+            </HBox>
+        </VBox>
+        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="840.0" spacing="10.0">
+            <Button fx:id="addSavings_confirmAddButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0"
+                    styleClass="confirm-button" text="%addSavings.confirm"/>
+            <Button fx:id="addSavings_cancelAddButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0"
+                    styleClass="cancel-button" text="%addSavings.cancel"/>
+        </HBox>
+    </VBox>
+</StackPane>

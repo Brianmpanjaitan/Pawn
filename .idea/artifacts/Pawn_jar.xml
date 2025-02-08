@@ -1,0 +1,86 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Pawn:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Pawn_jar</output-path>
+    <root id="archive" name="Pawn.jar">
+      <element id="module-output" name="Pawn" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/tilesfx/21.0.3/tilesfx-21.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.30/pdfbox-2.0.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-web/23.0.1/javafx-web-23.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/toolboxfx/21.0.3/toolboxfx-21.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/sarxos/webcam-capture/0.3.12/webcam-capture-0.3.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/pdfbox/fontbox/2.0.30/fontbox-2.0.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/toolbox/21.0.5/toolbox-21.0.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/fx/countries/21.0.3/countries-21.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-swing/23.0.1/javafx-swing-23.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-media/23.0.1/javafx-media-23.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/23.0.1/javafx-fxml-23.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/uk/co/caprica/vlcj/4.7.1/vlcj-4.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/23.0.1/javafx-fxml-23.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/uk/co/caprica/vlcj-javafx/1.2.0/vlcj-javafx-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-swing/23.0.1/javafx-swing-23.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/kordamp/ikonli/ikonli-javafx/12.3.1/ikonli-javafx-12.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-web/23.0.1/javafx-web-23.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.20/postgresql-42.2.20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/uk/co/caprica/vlcj-natives/4.1.0/vlcj-natives-4.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcodec/jcodec/0.2.5/jcodec-0.2.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/kordamp/ikonli/ikonli-core/12.3.1/ikonli-core-12.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-media/23.0.1/javafx-media-23.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/fx/heatmap/21.0.3/heatmap-21.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/controlsfx/controlsfx/11.2.1/controlsfx-11.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/nativelibs4java/bridj/0.7.0/bridj-0.7.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/android/tools/dx/1.7/dx-1.7.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.4.14" />
+      <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.4.14" />
+      <element id="library" level="project" name="Maven: com.github.sarxos:webcam-capture:0.3.12" />
+      <element id="library" level="project" name="Maven: com.google.android.tools:dx:1.7" />
+      <element id="library" level="project" name="Maven: com.nativelibs4java:bridj:0.7.0" />
+      <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+      <element id="library" level="project" name="Maven: eu.hansolo.fx:countries:21.0.3" />
+      <element id="library" level="project" name="Maven: eu.hansolo.fx:heatmap:21.0.3" />
+      <element id="library" level="project" name="Maven: eu.hansolo:toolboxfx:21.0.3" />
+      <element id="library" level="project" name="Maven: eu.hansolo:toolbox:21.0.5" />
+      <element id="library" level="project" name="Maven: net.java.dev.jna:jna-platform:5.13.0" />
+      <element id="library" level="project" name="Maven: org.apache.pdfbox:fontbox:2.0.30" />
+      <element id="library" level="project" name="Maven: net.java.dev.jna:jna:5.13.0" />
+      <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.5.0" />
+      <element id="library" level="project" name="Maven: org.apache.pdfbox:pdfbox:2.0.30" />
+      <element id="library" level="project" name="Maven: org.controlsfx:controlsfx:11.2.1" />
+      <element id="library" level="project" name="Maven: org.jcodec:jcodec:0.2.5" />
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-javafx:12.3.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:23.0.1" />
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-core:12.3.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:win:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-swing:win:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-swing:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-web:win:23.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-web:23.0.1" />
+      <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.2.20" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:23.0.1" />
+      <element id="library" level="project" name="Maven: uk.co.caprica:vlcj-javafx:1.2.0" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.7" />
+      <element id="library" level="project" name="Maven: uk.co.caprica:vlcj-natives:4.1.0" />
+      <element id="library" level="project" name="Maven: uk.co.caprica:vlcj:4.7.1" />
+      <element id="library" level="project" name="Maven: eu.hansolo:tilesfx:21.0.3" />
+    </root>
+  </artifact>
+</component>

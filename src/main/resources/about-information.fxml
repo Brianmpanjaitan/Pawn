@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="200.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="org.example.resources.about">
+    <children>
+        <VBox alignment="CENTER" prefHeight="312.0" prefWidth="664.0" spacing="20.0">
+            <!-- Client Name Input Section -->
+            <VBox alignment="CENTER" prefHeight="249.0" prefWidth="664.0" spacing="10.0">
+                <Label fx:id="about_titleLabel" prefHeight="33.0" prefWidth="321.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="%about.title" />
+                <Label fx:id="about_createdLabel" prefHeight="33.0" prefWidth="280.0" style="-fx-font-weight: bold;" text="%about.createdBy" />
+                <Label fx:id="about_contactLabel" prefHeight="33.0" prefWidth="280.0" style="-fx-font-weight: bold;" text="%about.contact" />
+            </VBox>
+        </VBox>
+    </children>
+</StackPane>

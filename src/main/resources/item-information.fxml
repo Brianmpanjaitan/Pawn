@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="576.0" maxWidth="797.0" prefHeight="576.0" prefWidth="700.0" stylesheets="@styles/item-information.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Main.ItemInformation">
+    <VBox prefHeight="200.0" prefWidth="100.0">
+        <VBox fx:id="contentVBox" alignment="CENTER" maxHeight="529.0" maxWidth="762.0" prefHeight="529.0" prefWidth="683.0" spacing="20.0">
+            <!-- Title Label -->
+            <Label fx:id="itemInformation_itemLabel" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="661.0"
+                   style="-fx-font-size: 18px; -fx-font-weight: bold;" text="%itemInformation.itemLabel">
+                <VBox.margin>
+                    <Insets bottom="10.0"/>
+                </VBox.margin>
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <Label fx:id="itemInformation_itemIDLabel" prefHeight="17.0" prefWidth="653.0" styleClass="bold-title">
+                <padding>
+                    <Insets left="4.0"/>
+                </padding>
+                <VBox.margin>
+                    <Insets/>
+                </VBox.margin>
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Label>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="52.0" prefWidth="600.0">
+                <Label fx:id="itemInformation_statusLabel" prefHeight="30.0" prefWidth="300.0"
+                       text="%itemInformation.statusLabel">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="itemInformation_pawnDateLabel" prefHeight="30.0" prefWidth="300.0"
+                       text="%itemInformation.pawnDateLabel">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="itemInformation_expireDateLabel" prefHeight="30.0" prefWidth="300.0"
+                       text="%itemInformation.expireDateLabel">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+            </VBox>
+            <HBox maxWidth="-Infinity" prefHeight="100.0" prefWidth="600.0">
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="75.0" prefWidth="600.0">
+                    <Label fx:id="itemInformation_priceLabel" prefHeight="30.0" prefWidth="300.0"
+                           text="%itemInformation.priceLabel">
+                        <font>
+                            <Font size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="itemInformation_tariffLabel" prefHeight="30.0" prefWidth="300.0"
+                           text="%itemInformation.tariffLabel">
+                        <font>
+                            <Font size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="itemInformation_adminLabel" prefHeight="30.0" prefWidth="300.0"
+                           text="%itemInformation.adminLabel">
+                        <font>
+                            <Font size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="itemInformation_provisionLabel" prefHeight="30.0" prefWidth="300.0"
+                           text="%itemInformation.provisionLabel">
+                        <font>
+                            <Font size="14.0"/>
+                        </font>
+                    </Label>
+                </VBox>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="75.0" prefWidth="600.0">
+                    <Label fx:id="itemInformation_storageLabel" prefHeight="30.0" prefWidth="300.0"
+                           text="%itemInformation.storageLabel">
+                        <font>
+                            <Font size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="itemInformation_damageLabel" prefHeight="30.0" prefWidth="300.0"
+                           text="%itemInformation.damageLabel">
+                        <font>
+                            <Font size="14.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="itemInformation_totalLabel" prefHeight="30.0" prefWidth="300.0"
+                           text="%itemInformation.totalLabel">
+                        <font>
+                            <Font size="14.0"/>
+                        </font>
+                    </Label>
+                </VBox>
+            </HBox>
+
+            <!-- Pipe Reference Section -->
+            <VBox alignment="CENTER" maxHeight="301.0" maxWidth="650.0" prefHeight="224.0" prefWidth="670.0"
+                  spacing="10.0">
+                <TextArea fx:id="itemInformation_notesField" maxHeight="-Infinity" maxWidth="-Infinity"
+                          prefHeight="187.0" prefWidth="588.0" styleClass="field-box">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </TextArea>
+            </VBox>
+
+        </VBox>
+
+        <!-- Action Buttons (OK and Cancel) -->
+        <HBox alignment="CENTER" maxHeight="85.0" maxWidth="704.0" prefHeight="66.0" prefWidth="704.0" spacing="10.0">
+            <Button fx:id="itemInformation_printButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0"
+                    styleClass="default-button" text="%itemInformation.printButton"/>
+            <Button fx:id="itemInformation_redeemButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0"
+                    styleClass="default-button" text="%itemInformation.redeemButton"/>
+            <Button fx:id="itemInformation_cancelButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0"
+                    styleClass="cancel-button" text="%itemInformation.cancelButton"/>
+        </HBox>
+    </VBox>
+</StackPane>

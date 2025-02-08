@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="754.0" maxWidth="1522.0" prefHeight="754.0" prefWidth="1522.0" stylesheets="@styles/customer-information.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Main.CustomerInformation">
+    <VBox alignment="CENTER" maxHeight="736.0" maxWidth="1505.0" prefHeight="736.0" prefWidth="1505.0" spacing="20.0">
+        <!-- Title Label -->
+        <Label fx:id="customerInformation_customerLabel" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="1444.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="%customerInformation.title">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="customerInformation_customerIDLabel" prefHeight="17.0" prefWidth="1433.0" styleClass="bold-title" text="%customerInformation.customerID">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets left="4.0" />
+            </padding>
+        </Label>
+        <HBox maxWidth="-Infinity" prefHeight="69.0" prefWidth="1430.0">
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="715.0">
+                <Label fx:id="customerInformation_phoneNumberLabel" prefHeight="17.0" prefWidth="455.0" text="%customerInformation.phoneNumber" />
+                <Label fx:id="customerInformation_genderLabel" prefHeight="17.0" prefWidth="455.0" text="%customerInformation.gender" />
+                <Label fx:id="customerInformation_customerStatusLabel" prefHeight="17.0" prefWidth="455.0" text="%customerInformation.customerStatus" />
+                <Label fx:id="customerInformation_notesLabel" prefHeight="17.0" prefWidth="455.0" text="%customerInformation.notes" />
+            </VBox>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="715.0">
+                <Label fx:id="customerInformation_addressLabel" prefHeight="17.0" prefWidth="455.0" text="%customerInformation.address" />
+                <Label fx:id="customerInformation_dobLabel" prefHeight="17.0" prefWidth="455.0" text="%customerInformation.dob" />
+                <Label fx:id="customerInformation_entryLabel" prefHeight="17.0" prefWidth="455.0" text="%customerInformation.entry" />
+                <Label fx:id="customerInformation_exitLabel" prefHeight="69.0" prefWidth="1248.0" text="%customerInformation.exit" />
+            </VBox>
+        </HBox>
+        <VBox prefHeight="445.0" prefWidth="1272.0" styleClass="dark-grey-box">
+            <HBox prefHeight="71.0" prefWidth="1272.0" styleClass="grey-box">
+                <VBox prefHeight="61.0" prefWidth="385.0" styleClass="grey-box">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <Label fx:id="customerInformation_statusLabel" contentDisplay="CENTER" prefHeight="33.0" prefWidth="235.0" styleClass="dark-grey-label" text="%customerInformation.status" textAlignment="CENTER" />
+                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="309.0">
+                        <ToggleButton fx:id="customerInformation_activeToggle" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="toggle-button" text="%customerInformation.active" />
+                        <ToggleButton fx:id="customerInformation_pawnedToggle" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="toggle-button" text="%customerInformation.pawned" />
+                        <ToggleButton fx:id="customerInformation_redeemedToggle" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="toggle-button" text="%customerInformation.redeemed" />
+                        <ToggleButton fx:id="customerInformation_expiredToggle" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="toggle-button" text="%customerInformation.expired" />
+                    </HBox>
+                </VBox>
+                <VBox prefHeight="61.0" prefWidth="315.0" styleClass="grey-box">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <Label fx:id="customerInformation_categoryLabel" contentDisplay="CENTER" prefHeight="31.0" prefWidth="225.0" styleClass="dark-grey-label" text="%customerInformation.category" textAlignment="CENTER">
+                        <VBox.margin>
+                            <Insets left="5.0" />
+                        </VBox.margin>
+                    </Label>
+                    <ChoiceBox fx:id="customerInformation_categoryChoiceBox" maxWidth="-Infinity" prefHeight="25.0" prefWidth="286.0" styleClass="custom-choicebox">
+                        <VBox.margin>
+                            <Insets left="5.0" />
+                        </VBox.margin>
+                    </ChoiceBox>
+                </VBox>
+                <VBox prefHeight="80.0" prefWidth="571.0" styleClass="grey-box">
+                    <Label contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="349.0" textAlignment="CENTER" />
+                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="350.0">
+                        <Button fx:id="customerInformation_clearButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="default-button" text="%customerInformation.clear" />
+                    </HBox>
+                </VBox>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="1272.0">
+                <Label fx:id="customerInformation_itemsFoundLabel" alignment="CENTER" prefHeight="35.0" prefWidth="117.0" styleClass="item-found-label" text="%customerInformation.itemsFound" textAlignment="CENTER" />
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="937.0">
+                <TextField fx:id="customerInformation_itemIDSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_itemNameSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_customerIDSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_categorySearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_statusSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_pawnDateSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_expireDateSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_priceSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_tariffSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_adminSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_provisionSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_damageFeeSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_storageFeeSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_totalSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+                <TextField fx:id="customerInformation_additionalNotesSearch" prefWidth="169.0" promptText="%customerInformation.search" styleClass="text-field" />
+            </HBox>
+            <TableView fx:id="customerInformation_itemTable" prefHeight="315.0" prefWidth="937.0" />
+        </VBox>
+
+        <!-- Action Buttons (OK and Cancel) -->
+        <HBox alignment="CENTER" maxHeight="80.0" maxWidth="650.0" prefHeight="56.0" prefWidth="650.0" spacing="10.0">
+            <Button fx:id="customerInformation_editCustomerButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" styleClass="confirm-button" text="%customerInformation.edit" />
+            <Button fx:id="customerInformation_cancelButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" styleClass="cancel-button" text="%customerInformation.cancel" />
+        </HBox>
+    </VBox>
+</StackPane>

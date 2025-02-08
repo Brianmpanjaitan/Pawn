@@ -1,0 +1,55 @@
+.text {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+/* Create Button */
+.confirm-button {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+.confirm-button:hover {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+.confirm-button:pressed {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+/* Default Button Style */
+.default-button {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+.default-button:hover {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+/* Apply base styles for the ChoiceBox */
+.custom-choicebox {
+    -fx-background-color: #dcdcdc;
+    -fx-text-fill: #000000; /* Default text color */
+    -fx-background-radius: 5;
+}
+
+/* Highlighted value styling when focused */
+.custom-choicebox.cell:selected {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Highlighted value styling when hovered */
+.custom-choicebox.cell:hover {
+    -fx-background-color: #D67B32;
+    -fx-text-fill: #FFFFFF;
+}

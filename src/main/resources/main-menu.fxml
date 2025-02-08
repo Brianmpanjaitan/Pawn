@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="825.0" prefWidth="1070.0" stylesheets="@styles/main-menu.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Main.MainMenu">
+    <padding>
+        <Insets left="20.0" right="20.0" />
+    </padding>
+
+    <HBox fx:id="mainMenu_toolbarBar" alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="1030.0" spacing="10" styleClass="toolbar-menu" xmlns:fx="http://javafx.com/fxml">
+        <Button fx:id="mainMenu_toolbarGeneral" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" styleClass="toolbar-button" text="%mainMenu.general" wrapText="true" />
+        <Button fx:id="mainMenu_toolbarSavings" mnemonicParsing="false" prefHeight="30.0" prefWidth="89.0" styleClass="toolbar-button" text="%mainMenu.savings" wrapText="true">
+            <HBox.margin>
+                <Insets left="-10.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="mainMenu_toolbarExpired" mnemonicParsing="false" prefHeight="30.0" prefWidth="89.0" styleClass="toolbar-button" text="%mainMenu.expire" wrapText="true">
+            <HBox.margin>
+                <Insets left="-10.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="mainMenu_toolbarCustomer" mnemonicParsing="false" prefHeight="30.0" prefWidth="89.0" styleClass="toolbar-button" text="%mainMenu.customer" wrapText="true">
+            <HBox.margin>
+                <Insets left="-10.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="mainMenu_toolbarSettings" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" styleClass="toolbar-button" text="%mainMenu.settings" wrapText="true">
+            <HBox.margin>
+                <Insets left="-10.0" />
+            </HBox.margin>
+        </Button>
+        <Button fx:id="mainMenu_toolbarHelp" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" styleClass="toolbar-button" text="%mainMenu.help" wrapText="true">
+            <HBox.margin>
+                <Insets left="-10.0" />
+            </HBox.margin>
+        </Button>
+    </HBox>
+
+    <HBox fx:id="mainMenu_toolbarButtons" prefHeight="50.0" prefWidth="1030.0" />
+
+    <StackPane alignment="TOP_CENTER" prefHeight="700.0" prefWidth="1030.0">
+        <TabPane fx:id="mainMenu_homeTabPane" prefHeight="694.0" prefWidth="1030.0" VBox.vgrow="ALWAYS">
+            <tabs>
+                <Tab fx:id="mainMenu_homeTab" closable="false" text="%mainMenu.home">
+                    <content>
+                        <StackPane alignment="TOP_CENTER">
+                            <HBox alignment="CENTER">
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="614.0" prefWidth="1028.0">
+                                    <children>
+                                        <Pane layoutX="8.0" layoutY="9.0" prefHeight="611.0" prefWidth="453.0">
+                                            <children>
+                                                <TextField fx:id="mainMenu_customerSearch" layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="423.0" promptText="%mainMenu.searchCustomer" styleClass="field-box" />
+                                                <VBox layoutX="14.0" layoutY="49.0" prefHeight="520.0" prefWidth="423.0">
+                                                    <children>
+                                                        <ListView fx:id="mainMenu_customerListView" prefHeight="546.0" prefWidth="423.0" />
+                                                    </children>
+                                                </VBox>
+                                                <Button fx:id="mainMenu_newCustomerButton" layoutX="175.0" layoutY="579.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" styleClass="default-button" text="%mainMenu.newCustomer" />
+                                            </children>
+                                        </Pane>
+
+                                        <Pane layoutX="467.0" layoutY="11.0" prefHeight="611.0" prefWidth="553.0">
+                                            <children>
+                                                <Label fx:id="mainMenu_itemLabel" layoutX="1.0" layoutY="7.0" prefHeight="43.0" prefWidth="550.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="%mainMenu.item" />
+                                                <VBox layoutX="3.0" layoutY="83.0" prefHeight="491.0" prefWidth="548.0">
+                                                    <children>
+                                                        <ListView fx:id="mainMenu_itemListView" layoutX="15.0" layoutY="400.0" prefHeight="484.0" prefWidth="548.0" />
+                                                    </children>
+                                                </VBox>
+                                                <ChoiceBox fx:id="mainMenu_itemCategoryChoiceBox" layoutX="3.0" layoutY="49.0" prefHeight="25.0" prefWidth="246.0" styleClass="custom-choicebox" />
+                                                <ChoiceBox fx:id="mainMenu_statusChoiceBox" layoutX="257.0" layoutY="49.0" prefHeight="25.0" prefWidth="80.0" styleClass="custom-choicebox" />
+                                                <Button fx:id="mainMenu_addItemButton" layoutX="150.0" layoutY="574.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" styleClass="default-button" text="%mainMenu.addItem" />
+                                                <Button fx:id="mainMenu_deleteItemButton" layoutX="249.0" layoutY="574.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" styleClass="default-button" text="%mainMenu.deleteItem" />
+                                                <Button fx:id="mainMenu_editItemButton" layoutX="347.0" layoutY="574.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" styleClass="default-button" text="%mainMenu.editItem" />
+                                                <TextField fx:id="mainMenu_itemIDSearch" layoutX="347.0" layoutY="49.0" prefHeight="25.0" prefWidth="204.0" promptText="%mainMenu.searchItem" styleClass="field-box" />
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </AnchorPane>
+                            </HBox>
+                        </StackPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </StackPane>
+</VBox>

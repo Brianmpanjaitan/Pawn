@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="572.0" maxWidth="719.0" prefHeight="265.0" prefWidth="648.0" stylesheets="@styles/new-category.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Toolbar.General.NewCategory">
+    <children>
+        <VBox alignment="CENTER" maxHeight="541.0" maxWidth="650.0" prefHeight="541.0" prefWidth="650.0" spacing="20.0">
+            <children>
+                <!-- Title Label -->
+                <Label fx:id="newCategory_titleLabel" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="571.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="%newCategory.titleLabel">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin></Label>
+
+                <!-- Pipe Reference Section -->
+                <VBox alignment="CENTER" maxHeight="372.0" maxWidth="650.0" prefHeight="85.0" prefWidth="650.0" spacing="10.0">
+                    <children>
+                        <Label fx:id="newCategory_promptLabel" alignment="CENTER" prefHeight="28.0" prefWidth="650.0" text="%newCategory.promptLabel" textAlignment="CENTER" />
+                        <TextField fx:id="newCategory_newCategoryField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="420.0" />
+                    </children>
+                </VBox>
+
+                <!-- Action Buttons (OK and Cancel) -->
+                <HBox alignment="CENTER" maxHeight="80.0" maxWidth="650.0" prefHeight="56.0" prefWidth="650.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="newCategory_confirmButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" styleClass="confirm-button" text="%newCategory.confirmButton" />
+                        <Button fx:id="newCategory_cancelButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" styleClass="default-button" text="%newCategory.cancelButton" />
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+
+            </children>
+        </VBox>
+    </children>
+
+</StackPane>

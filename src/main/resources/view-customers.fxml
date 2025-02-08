@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="600.0" prefWidth="1040.0" stylesheets="@styles/manage-items.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Toolbar.Customer.ViewCustomers">
+    <VBox fx:id="viewCustomer_VBoxContent" prefHeight="450.0" prefWidth="1000.0">
+        <!-- Search and Filters Section -->
+        <HBox prefHeight="65.0" prefWidth="1000.0" styleClass="grey-box">
+            <!-- Search Field -->
+            <VBox prefHeight="65.0" prefWidth="233.0" styleClass="grey-box">
+                <Label fx:id="viewCustomer_searchLabel" contentDisplay="CENTER" prefHeight="25.0" prefWidth="170.0" styleClass="dark-grey-label" text="%manageItems.searchLabel" textAlignment="CENTER">
+                    <padding>
+                        <Insets left="8.0" top="5.0" />
+                    </padding>
+                </Label>
+                <ChoiceBox fx:id="viewCustomer_customerChoiceBox" maxWidth="-Infinity" prefHeight="25.0" prefWidth="188.0" styleClass="custom-choicebox">
+                    <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                    </VBox.margin>
+                </ChoiceBox>
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+            </VBox>
+
+            <VBox prefHeight="65.0" prefWidth="215.0" styleClass="grey-box">
+                <children>
+                    <Label contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="349.0" textAlignment="CENTER" />
+                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="350.0">
+                        <children>
+                            <Button fx:id="viewCustomer_clearButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="%manageItems.clearButton" />
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+        </HBox>
+
+        <!-- Table and Filter Section -->
+        <VBox prefHeight="536.0" prefWidth="1000.0" styleClass="dark-grey-box">
+            <HBox prefHeight="61.0" prefWidth="1000.0">
+                <Label fx:id="viewCustomer_customersFoundLabel" alignment="CENTER" prefHeight="31.0" prefWidth="270.0" styleClass="item-found-label" text="%viewCustomers.customersFoundLabel" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Label>
+                <Button fx:id="viewCustomer_printButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" styleClass="orange-button" text="%manageItems.printButton">
+                    <HBox.margin>
+                        <Insets left="10.0" top="2.5" />
+                    </HBox.margin>
+                </Button>
+            </HBox>
+
+            <!-- Search Text Fields below the column headers -->
+            <HBox prefHeight="35.0" prefWidth="1000.0">
+                <TextField fx:id="viewCustomer_customerIDSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+                <TextField fx:id="viewCustomer_customerNameSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+                <TextField fx:id="viewCustomer_phoneNumberSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+                <TextField fx:id="viewCustomer_addressSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+                <TextField fx:id="viewCustomer_genderSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+                <TextField fx:id="viewCustomer_dobSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+                <TextField fx:id="viewCustomer_statusSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+                <TextField fx:id="viewCustomer_entryDateSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+                <TextField fx:id="viewCustomer_exitDateSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+                <TextField fx:id="viewCustomer_notesSearch" prefWidth="169.0" promptText="%manageItems.searchPrompt" styleClass="text-field" />
+            </HBox>
+
+            <!-- Table with Filter Rows -->
+            <TableView fx:id="viewCustomer_customerTable" prefHeight="509.0" prefWidth="1000.0">
+                <!-- Table Columns -->
+            </TableView>
+        </VBox>
+    </VBox>
+</StackPane>

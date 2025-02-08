@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.DatePicker?>
+<StackPane prefHeight="550.0" prefWidth="851.0" stylesheets="@styles/create-customer.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Main.CreateCustomer">
+    <children>
+        <VBox alignment="CENTER" prefHeight="496.0" prefWidth="725.0" spacing="20.0">
+            <Label fx:id="createCustomer_titleLabel" contentDisplay="RIGHT" prefHeight="107.0" prefWidth="809.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="%createCustomer.title"/>
+            <HBox prefHeight="320.0" prefWidth="851.0">
+                <!-- Client Name Input Section -->
+                <VBox alignment="CENTER" prefHeight="352.0" prefWidth="664.0" spacing="10.0">
+                    <Label fx:id="createCustomer_nameLabel" prefHeight="33.0" prefWidth="340.0" text="%createCustomer.name"/>
+                    <TextField fx:id="createCustomer_newCustomerName" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0"
+                               prefWidth="340.0" styleClass="field-box">
+                        <VBox.margin>
+                            <Insets/>
+                        </VBox.margin>
+                    </TextField>
+                    <Label fx:id="createCustomer_phoneLabel" prefHeight="33.0" prefWidth="340.0" text="%createCustomer.phone"/>
+                    <TextField fx:id="createCustomer_phoneNumberField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0"
+                               prefWidth="340.0" styleClass="field-box"/>
+                    <Label prefHeight="33.0" prefWidth="340.0" text="%createCustomer.address"/>
+                    <TextField fx:id="createCustomer_addressField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0"
+                               prefWidth="340.0" styleClass="field-box"/>
+                    <Label fx:id="createCustomer_genderLabel" prefHeight="33.0" prefWidth="340.0" text="%createCustomer.gender"/>
+                    <ChoiceBox fx:id="createCustomer_genderChoice" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0"
+                               prefWidth="340.0" styleClass="custom-choicebox"/>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="352.0" prefWidth="664.0" spacing="10.0">
+                    <children>
+                        <Label fx:id="createCustomer_dobLabel" prefHeight="33.0" prefWidth="340.0" text="%createCustomer.dob"/>
+                        <DatePicker fx:id="createCustomer_dobPicker" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0"
+                                    prefWidth="340.0" styleClass="field-box"/>
+                        <Label fx:id="createCustomer_statusLabel" prefHeight="33.0" prefWidth="340.0" text="%createCustomer.status"/>
+                        <ChoiceBox fx:id="createCustomer_statusChoice" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0"
+                                   prefWidth="340.0" styleClass="custom-choicebox"/>
+                        <Label fx:id="createCustomer_entryLabel" prefHeight="33.0" prefWidth="340.0" text="%createCustomer.entryDate"/>
+                        <DatePicker fx:id="createCustomer_entryPicker" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0"
+                                    prefWidth="340.0" styleClass="field-box"/>
+                        <Label fx:id="createCustomer_exitLabel" prefHeight="33.0" prefWidth="340.0" text="%createCustomer.exitDate"/>
+                        <DatePicker fx:id="createCustomer_exitPicker" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0"
+                                    prefWidth="340.0" styleClass="field-box"/>
+                    </children>
+                </VBox>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="211.0" prefWidth="851.0" spacing="10.0">
+                <Label fx:id="createCustomer_notesLabel" prefHeight="26.0" prefWidth="627.0" text="%createCustomer.notes"/>
+                <TextArea fx:id="createCustomer_notesField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="93.0"
+                          prefWidth="629.0" styleClass="field-box"/>
+            </VBox>
+            <!-- Buttons Section -->
+            <HBox alignment="CENTER" prefHeight="103.0" prefWidth="851.0" spacing="10.0">
+                <Button fx:id="createCustomer_createNewCustomer" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" styleClass="confirm-button" text="%createCustomer.create"/>
+                <Button fx:id="createCustomer_cancelNewCustomer" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" styleClass="default-button" text="%createCustomer.cancel"/>
+            </HBox>
+        </VBox>
+    </children>
+</StackPane>

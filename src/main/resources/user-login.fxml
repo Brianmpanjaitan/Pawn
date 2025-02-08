@@ -12,17 +12,17 @@
     <VBox alignment="CENTER" spacing="20">
 
         <!-- Identification Label at the top, bold and double font size -->
-        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Identification" />
+        <Label fx:id="userLogin_titleLabel" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="%userLogin.titleLabel" />
 
         <!-- VBox to position 'Select a User' label and ChoiceBox vertically -->
         <VBox alignment="CENTER" spacing="10">
-            <Label text="Select a User" />
-            <ChoiceBox fx:id="userChoiceBox" styleClass="custom-choicebox" maxWidth="300.0" prefHeight="25.0" />
+            <Label fx:id="userLogin_subtitleLabel" text="%userLogin.subtitleLabel" />
+            <ChoiceBox fx:id="userLogin_userChoiceBox" styleClass="custom-choicebox" maxWidth="300.0" prefHeight="25.0" />
         </VBox>
-        <TextField fx:id="certificateField" maxWidth="300.0" prefHeight="25.0" promptText="Certificate Number" />
+        <TextField fx:id="userLogin_passwordField" styleClass="field-box" maxWidth="300.0" prefHeight="25.0" promptText="%userLogin.passwordPrompt" />
 
         <!-- Button with a fixed width -->
-        <Button fx:id="enterButton" styleClass="enter-button" alignment="CENTER" prefHeight="25.0" prefWidth="150.0" text="Enter" />
+        <Button fx:id="userLogin_enterButton" styleClass="enter-button" alignment="CENTER" prefHeight="25.0" prefWidth="150.0" text="%userLogin.enterButton" />
 
     </VBox>
 </StackPane>

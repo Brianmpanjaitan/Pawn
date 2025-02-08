@@ -1,0 +1,23 @@
+/* Styling for the toolbar buttons */
+.toolbar-button {
+    -fx-background-color: #F4F4F4;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, transparent, 0, 0, 0, 0);
+    -fx-text-fill: #2E2E2E;
+    -fx-transition: all 0.3s ease;
+}
+
+/* Hover state - change the background color and text color slightly */
+.toolbar-button:hover {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Active (pressed) state */
+.toolbar-button:pressed {
+    -fx-effect: dropshadow(gaussian, #F39C12, 10, 0.0, 0, 2);
+    -fx-background-color: #F39C12;
+    -fx-text-fill: #FFFFFF;
+}

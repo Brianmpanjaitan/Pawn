@@ -1,0 +1,42 @@
+.field-box {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.field-box:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Title style */
+.bold-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-background-color: #D3D3D3;
+}
+
+/* Create Button */
+.default-button {
+    -fx-background-color: #BC5A01;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+.default-button:hover {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+.default-button:pressed {
+    -fx-background-color: #333333;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+/* Cancel Button */
+.cancel-button {
+    -fx-background-color: #4C4E4B;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+}

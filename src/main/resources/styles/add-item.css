@@ -1,9 +1,18 @@
+.field-box {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.field-box:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
 /* Apply base styles for the ChoiceBox */
 .custom-choicebox {
     -fx-background-color: #dcdcdc;
     -fx-text-fill: #000000; /* Default text color */
-    -fx-background-radius: 0;
-    -fx-border-radius: 0;
+    -fx-background-radius: 5;
 }
 
 /* Highlighted value styling when focused */
@@ -18,31 +27,39 @@
     -fx-text-fill: #FFFFFF;
 }
 
-/* Select Button */
-.enter-button {
+/* Styling for the popup list */
+.custom-choicebox.list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+}
+
+.custom-choicebox:disabled {
+    -fx-opacity: 1.0;
+    -fx-text-fill: black;
+}
+
+/* Create Button */
+.confirm-button {
     -fx-background-color: #BC5A01;
     -fx-text-fill: #FFFFFF;
     -fx-background-radius: 0;
 }
 
-.enter-button:hover {
+.confirm-button:hover {
     -fx-background-color: #333333;
     -fx-text-fill: #FFFFFF;
     -fx-background-radius: 0;
 }
 
-.enter-button:pressed {
+.confirm-button:pressed {
     -fx-background-color: #333333;
     -fx-text-fill: #FFFFFF;
     -fx-background-radius: 0;
 }
 
-.field-box {
+/* Cancel Button */
+.cancel-button {
+    -fx-background-color: #4C4E4B;
+    -fx-text-fill: #FFFFFF;
     -fx-background-radius: 0;
-    -fx-border-radius: 0;
-}
-
-.field-box:focused {
-    -fx-focus-color: transparent;
-    -fx-faint-focus-color: transparent;
 }

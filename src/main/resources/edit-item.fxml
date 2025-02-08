@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="800.0" prefWidth="840.0" stylesheets="@styles/edit-item.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Main.EditItem">
+    <children>
+        <VBox alignment="CENTER" prefHeight="656.0" prefWidth="665.0" spacing="20.0">
+            <Label fx:id="editItem_titleLabel" contentDisplay="RIGHT" prefHeight="68.0" prefWidth="611.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="%editItem.titleLabel">
+                <VBox.margin>
+                    <Insets top="40.0" />
+                </VBox.margin></Label>
+            <HBox prefHeight="363.0" prefWidth="665.0">
+                <children>
+                    <!-- Client Name Input Section -->
+                    <VBox alignment="CENTER" prefHeight="75.0" prefWidth="664.0" spacing="10.0">
+                        <Label fx:id="editItem_nameLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.nameLabel" />
+                        <TextField fx:id="editItem_itemNameField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="field-box">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </TextField>
+                         <Label fx:id="editItem_statusLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.statusLabel" />
+                         <ChoiceBox fx:id="editItem_statusChoice" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="custom-choicebox">
+                             <VBox.margin>
+                                 <Insets />
+                             </VBox.margin>
+                         </ChoiceBox>
+                        <Label fx:id="editItem_categoryLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.categoryLabel" />
+                        <ChoiceBox fx:id="editItem_categoryChoice" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="custom-choicebox" />
+                        <Label fx:id="editItem_pawnedLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.pawnedLabel" />
+                        <DatePicker fx:id="editItem_pawnDatePicker" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="custom-choicebox" />
+                        <Label fx:id="editItem_expireLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.expireLabel" />
+                        <DatePicker fx:id="editItem_expireDatePicker" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="custom-choicebox" />
+                    </VBox>
+                    <VBox alignment="CENTER" prefHeight="75.0" prefWidth="664.0" spacing="10.0">
+                        <children>
+                            <Label fx:id="editItem_priceLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.priceLabel" />
+                            <TextField fx:id="editItem_priceField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="field-box" />
+                            <Label fx:id="editItem_tariffLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.tariffLabel" />
+                            <TextField fx:id="editItem_tariffField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="field-box" />
+                            <Label fx:id="editItem_adminLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.adminLabel" />
+                            <TextField fx:id="editItem_adminField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="field-box" />
+                             <Label fx:id="editItem_provisionLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.provision" />
+                             <TextField fx:id="editItem_provisionField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="field-box" />
+                             <Label fx:id="editItem_storageLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.storage" />
+                             <TextField fx:id="editItem_storageField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="field-box" />
+                             <Label fx:id="editItem_damageLabel" prefHeight="33.0" prefWidth="300.0" text="%editItem.damage" />
+                             <TextField fx:id="editItem_damageField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" styleClass="field-box" />
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+         <VBox alignment="CENTER" prefHeight="83.0" prefWidth="838.0" spacing="10.0">
+            <children>
+                      <Label fx:id="editItem_totalLabel" prefHeight="17.0" prefWidth="626.0" text="%editItem.totalLabel" />
+                      <TextField fx:id="editItem_totalField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="629.0" styleClass="field-box" />
+            </children>
+         </VBox>
+            <HBox prefHeight="190.0" prefWidth="830.0">
+                <VBox alignment="CENTER" prefHeight="211.0" prefWidth="838.0" spacing="10.0">
+                    <children>
+                        <Label fx:id="editItem_notesLabel" prefHeight="26.0" prefWidth="627.0"
+                               text="%editItem.notesLabel"/>
+                        <TextArea fx:id="editItem_notesField" maxHeight="-Infinity" maxWidth="-Infinity"
+                                  prefHeight="183.0" prefWidth="629.0" styleClass="field-box"/>
+                    </children>
+                </VBox>
+            </HBox>
+            <!-- Buttons Section -->
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="664.0" spacing="10.0">
+                <Button fx:id="editItem_confirmEditButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" styleClass="confirm-button" text="%editItem.confirmEditButton" />
+                <Button fx:id="editItem_cancelEditButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" styleClass="default-button" text="%editItem.cancelEditButton" />
+            </HBox>
+        </VBox>
+    </children>
+</StackPane>

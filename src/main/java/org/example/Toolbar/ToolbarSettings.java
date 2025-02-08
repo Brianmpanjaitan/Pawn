@@ -10,9 +10,7 @@ import javafx.stage.Stage;
 import org.example.Classes.User;
 import org.example.Main.MainMenu;
 import org.example.Start;
-import org.example.Toolbar.Savings.ManageSavings;
 import org.example.Toolbar.Settings.CreateUser;
-import org.example.UserLogin;
 
 import java.io.IOException;
 import java.sql.*;

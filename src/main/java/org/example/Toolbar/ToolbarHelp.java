@@ -8,7 +8,6 @@ import javafx.scene.control.Button;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.example.Classes.User;
-import org.example.Main.CreateCustomer;
 import org.example.Main.MainMenu;
 import org.example.Start;
 import org.example.Toolbar.Help.LanguageOption;

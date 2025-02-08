@@ -6,7 +6,6 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import org.example.Classes.User;
 import org.example.Main.MainMenu;
-import org.example.Toolbar.General.ManageItems;
 import org.example.Toolbar.Savings.ManageSavings;
 import org.example.Toolbar.Savings.SavingsPage;
 

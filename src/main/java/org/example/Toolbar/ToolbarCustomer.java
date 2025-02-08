@@ -13,7 +13,6 @@ import org.example.Main.CreateCustomer;
 import org.example.Main.MainMenu;
 import org.example.Toolbar.Customer.EditCustomer;
 import org.example.Toolbar.Customer.ViewCustomers;
-import org.example.Toolbar.General.ManageItems;
 
 import java.io.IOException;
 import java.sql.*;
